@@ -30,7 +30,7 @@ Navega: *Rendimiento > CPU > Virtualización*
 ## Habilitar Virtualización
 Abrir PowerShell como administrador y habilitar:
 ```bash
-dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
 ```
 
 # Instalar WSL2 en Windows
