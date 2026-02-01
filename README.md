@@ -156,5 +156,41 @@ Navegar `\\wsl$\<DistributionName>` in File Explorer
 ```
 ![access-file-explorer](pictures/access-file-ubuntu-windows.png)
 
+# 🔹 Exportar Imagen WSL
+
+1. Listar tus distribuciones instaladas:
+```bash
+wsl -l -v
+```
+2. Detener la distribución antes de exportar:
+```bash
+wsl -t Ubuntu
+```
+3. Exportar:
+```bash
+wsl --export TopicosBI D:\wsl-backups\TopicosBI.tar
+```
+# 🔹 Importar la imagen en otra máquina
+```bash
+wsl --import <NombreNuevaDistro> <RutaInstalación> <RutaArchivoTar> [--version 2]
+```
+`⚠️ Nota`: La distribución importada no tendrá un usuario predeterminado configurado. Para establecerlo:
+```bash
+ubuntu config --default-user tu_usuario
+```
+
+# 🔹 Comandos útiles adicionales
+
+--------------------------------------------------------------------------------
+|           Comando             |           Descripción                         |
+---------------------------------------------------------------------------------
+|   wsl -l -v                   |   Listar distribuciones con estado y versión  |
+|   wsl -t <Distro>             |   Terminar una distribución                   |
+|   wsl --shutdown              |   Apagar todas las distribuciones WSL         |
+|   wsl --unregister <Distro>   |   Eliminar permanentemente una distribución   |
+---------------------------------------------------------------------------------
+
+
+
 © 2025 Jaime Llanos Bardales.  
 Este trabajo está bajo una licencia [Creative Commons Attribution 4.0 Internacional](LICENSE).
