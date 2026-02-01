@@ -181,6 +181,7 @@ ubuntu config --default-user tu_usuario
 
 # 🔹 Comandos útiles adicionales
 
+```text
 --------------------------------------------------------------------------------
 |           Comando             |           Descripción                         |
 ---------------------------------------------------------------------------------
@@ -189,7 +190,7 @@ ubuntu config --default-user tu_usuario
 |   wsl --shutdown              |   Apagar todas las distribuciones WSL         |
 |   wsl --unregister <Distro>   |   Eliminar permanentemente una distribución   |
 ---------------------------------------------------------------------------------
-
+```
 
 
 © 2025 Jaime Llanos Bardales.  
