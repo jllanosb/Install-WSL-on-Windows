@@ -168,12 +168,21 @@ wsl -t Ubuntu
 ```
 3. Exportar:
 ```bash
-wsl --export TopicosBI D:\wsl-backups\TopicosBI.tar
+wsl --export <Distro> <RutaArchivo/NombreArchivo.tar>
+```
+Ejemplo Exportacion
+```bash
+wsl --export Ubuntu-24.04 D:\wsl-backups\TopicosBI.tar
 ```
 # 🔹 Importar la imagen en otra máquina
 ```bash
 wsl --import <NombreNuevaDistro> <RutaInstalación> <RutaArchivoTar> [--version 2]
 ```
+Ejemplo Importacion
+```bash
+wsl --export TopicosBI D:\wsl\ D:\wsl-backups\TopicosBI.tar
+```
+
 `⚠️ Nota`: La distribución importada no tendrá un usuario predeterminado configurado. Para establecerlo:
 ```bash
 ubuntu config --default-user tu_usuario
