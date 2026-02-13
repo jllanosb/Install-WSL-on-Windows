@@ -180,7 +180,7 @@ wsl --import <NombreNuevaDistro> <RutaInstalación> <RutaArchivoTar> [--version 
 ```
 Ejemplo Importacion
 ```bash
-wsl --export TopicosBI D:\wsl\ D:\wsl-backups\TopicosBI.tar
+wsl --import TopicosBI D:\wsl\ D:\wsl-backups\TopicosBI.tar --version 2
 ```
 
 `⚠️ Nota`: La distribución importada no tendrá un usuario predeterminado configurado. Para establecerlo:
